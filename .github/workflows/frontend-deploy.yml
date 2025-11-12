@@ -24,12 +24,12 @@ jobs:
       # Step 3: Install dependencies
       - name: Install dependencies
         run: npm install
-        working-directory: frontend
+        working-directory: ./frontend
 
       # Step 4: Build the React app
       - name: Build frontend
         run: npm run build
-        working-directory: frontend
+        working-directory: ./frontend
 
       # Step 5: Save build folder as artifact (optional)
       - name: Upload build artifact
